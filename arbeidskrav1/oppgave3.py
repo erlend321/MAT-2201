@@ -13,7 +13,6 @@ def ln(x):
 
 
 
-
 def FPI(funk, xn, r):
 
     last_value = None
@@ -21,6 +20,7 @@ def FPI(funk, xn, r):
     iterations = []
     iteration_count = 0
     tol = 1e-9
+
 
     print(f"{'x':^12}{'f(x)':^12}{'ei = |x - r|':^10}{'ei/ei-1':^12}")
 
@@ -34,7 +34,6 @@ def FPI(funk, xn, r):
         
         error = abs(xn - r)
 
-        ratio = ""
         if last_value is not None and error != 0:
             ratio = abs((last_value - r) / (xn - r))
 
@@ -43,7 +42,7 @@ def FPI(funk, xn, r):
             
         if last_value != None:
             if abs(last_value - xn) < tol:
-                print(f"It converged at {xn:.8f}")
+                print(f"\nIt converged at {xn:.8f}\n")
                 break
 
         last_value = xn
