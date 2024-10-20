@@ -89,6 +89,7 @@ hubble_4 = a_model_4 * 100
 
 if __name__=="__main__":
     print(f"Model 1, linear fit:\n")
+    print(f"A = \n{A}")
     print(f"The Hubble constant (Slope): {hubble_contant:.4f} km/s per Mpc")
     print(f"Fitted model: y = {a:.2f}x + {b:.2f}")
     print(f"The sum of squared res: {ssr:.3f}\n")
