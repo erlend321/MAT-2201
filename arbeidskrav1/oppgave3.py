@@ -21,7 +21,6 @@ def FPI(funk, xn, r):
     iteration_count = 0
     tol = 1e-9
 
-
     print(f"{'x':^12}{'f(x)':^12}{'ei = |x - r|':^10}{'ei/ei-1':^12}")
 
     while True:
